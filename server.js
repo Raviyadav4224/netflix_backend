@@ -30,7 +30,7 @@ cloudinary.v2.config({
 });
 //Routes
 app.use("/netflixBckEnd/v1", userRoute);
-
+app.use('/',(req,res)=>res.send("Server is running"))
 //error handler
 app.use(errorHandler);
 //server running
